@@ -60,7 +60,11 @@ export default function ArtListingPreview() {
           {artworks.map((artwork, i) => (
             <AnimatedSection key={artwork.id} delay={i * 0.1}>
               <div className="group bg-surface rounded-2xl overflow-hidden ring-1 ring-border shadow-sm hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 transition-all duration-500">
-                <div className="aspect-[4/5] bg-gradient-to-br from-background to-border/40 overflow-hidden relative">
+                <Link
+                  href={`/gallery/${artwork.id}`}
+                  className="aspect-[4/5] bg-gradient-to-br from-background to-border/40 overflow-hidden relative block"
+                  aria-label={`View ${artwork.title}`}
+                >
                   {artwork.images.length > 0 ? (
                     <Image
                       src={artwork.images[0]}
@@ -79,12 +83,14 @@ export default function ArtListingPreview() {
                       Sold
                     </div>
                   )}
-                </div>
+                </Link>
 
                 <div className="p-5">
-                  <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
-                    {artwork.title}
-                  </h3>
+                  <Link href={`/gallery/${artwork.id}`}>
+                    <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                      {artwork.title}
+                    </h3>
+                  </Link>
                   <p className="text-sm text-muted">{artwork.category}</p>
                   <div className="mt-3 flex items-center justify-between gap-3">
                     <p className="font-medium">

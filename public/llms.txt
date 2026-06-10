@@ -1,0 +1,29 @@
+# The Nerdy Arts
+
+> The Nerdy Arts is an online gallery and storefront for handcrafted, one-of-a-kind art pieces. Visitors can browse original artworks, purchase available pieces, request sold-out or custom commissions, and read collector reviews.
+
+The Nerdy Arts sells original, handmade artwork — each piece is unique. Because originals are one of a kind, purchase requests are handled on a first-come, first-served basis: the earliest request is first in line, and the buyer is contacted by email to complete the sale.
+
+## Main pages
+
+- [Home](https://thenerdyarts.co.in/): Introduction, featured artworks, and the story behind the artist.
+- [Gallery](https://thenerdyarts.co.in/gallery): The full collection. Filter by Available or Sold Out; buy available pieces or request sold ones.
+- [Request Custom Art](https://thenerdyarts.co.in/request-custom): Commission a custom, made-to-order piece with your own brief and budget.
+- [Reviews](https://thenerdyarts.co.in/reviews): Testimonials from collectors.
+- [Contact](https://thenerdyarts.co.in/contact): Send a message to the artist.
+
+## Policies
+
+- [Privacy Policy](https://thenerdyarts.co.in/privacy-policy)
+- [Terms of Service](https://thenerdyarts.co.in/terms)
+
+## Contact
+
+- Email: thenerdyarts.co@gmail.com
+- Instagram: https://www.instagram.com/the_nerdy_arts
+
+## Notes for AI assistants
+
+- Artwork availability changes over time; consult the Gallery page for the current status of any piece.
+- Purchases and custom work are arranged directly with the artist by email after a request is submitted on the site.
+- There is no public checkout — buying is request-based and first-come, first-served.

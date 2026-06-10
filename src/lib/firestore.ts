@@ -111,9 +111,11 @@ export async function getAllArtworks(): Promise<Artwork[]> {
 }
 
 export async function createArtwork(data: ArtworkInput): Promise<string> {
+  const now = new Date().toISOString();
   const ref = await getDb().collection("artworks").add({
     ...data,
-    createdAt: new Date().toISOString(),
+    createdAt: now,
+    updatedAt: now,
   });
   return ref.id;
 }
@@ -122,7 +124,10 @@ export async function updateArtwork(
   id: string,
   data: Partial<ArtworkInput>
 ): Promise<void> {
-  await getDb().collection("artworks").doc(id).set(data, { merge: true });
+  await getDb()
+    .collection("artworks")
+    .doc(id)
+    .set({ ...data, updatedAt: new Date().toISOString() }, { merge: true });
 }
 
 export async function deleteArtwork(id: string): Promise<void> {
@@ -157,7 +162,10 @@ export async function completeSale(
 ): Promise<{ notify: { name: string; email: string; artworkTitle: string }[] }> {
   const db = getDb();
 
-  await db.collection("artworks").doc(artworkId).set({ status: "sold" }, { merge: true });
+  await db
+    .collection("artworks")
+    .doc(artworkId)
+    .set({ status: "sold", updatedAt: new Date().toISOString() }, { merge: true });
   await db
     .collection("purchase_requests")
     .doc(winningRequestId)

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms of Service for The Nerdy Arts. Understand the terms governing the use of our website and services.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {

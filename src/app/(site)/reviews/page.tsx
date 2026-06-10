@@ -5,6 +5,7 @@ import type { Review } from "@/types";
 
 export const metadata: Metadata = {
   title: "Reviews",
+  alternates: { canonical: "/reviews" },
   description: "Read what our collectors and clients say about The Nerdy Arts and our handcrafted art pieces.",
 };
 

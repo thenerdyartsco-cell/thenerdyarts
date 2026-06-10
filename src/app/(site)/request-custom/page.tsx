@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 export const metadata: Metadata = {
   title: "Request Custom Art",
   description: "Commission a custom art piece tailored to your vision. Tell us your ideas and we'll bring them to life.",
+  alternates: { canonical: "/request-custom" },
 };
 
 export default function RequestCustomPage() {

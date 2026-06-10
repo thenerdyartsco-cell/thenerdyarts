@@ -5,6 +5,7 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 export const metadata: Metadata = {
   title: "Gallery",
   description: "Browse our collection of handcrafted art pieces. Find available artworks to purchase or request sold out pieces.",
+  alternates: { canonical: "/gallery" },
 };
 
 export default function GalleryPage() {

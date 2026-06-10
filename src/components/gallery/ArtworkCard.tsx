@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import Button from "@/components/ui/Button";
 import type { Artwork } from "@/types";
 
@@ -15,7 +16,11 @@ export default function ArtworkCard({ artwork, onBuy, onRequestSoldOut }: Artwor
 
   return (
     <div className="group bg-surface rounded-2xl overflow-hidden ring-1 ring-border shadow-sm hover:shadow-xl hover:shadow-accent/10 hover:-translate-y-1 transition-all duration-500 flex flex-col">
-      <div className="aspect-[4/5] bg-gradient-to-br from-background to-border/40 overflow-hidden relative">
+      <Link
+        href={`/gallery/${artwork.id}`}
+        className="aspect-[4/5] bg-gradient-to-br from-background to-border/40 overflow-hidden relative block"
+        aria-label={`View ${artwork.title}`}
+      >
         {artwork.images.length > 0 ? (
           <Image
             src={artwork.images[0]}
@@ -35,10 +40,14 @@ export default function ArtworkCard({ artwork, onBuy, onRequestSoldOut }: Artwor
             Sold
           </div>
         )}
-      </div>
+      </Link>
 
       <div className="space-y-2 p-5 flex flex-col flex-1">
-        <h3 className="font-serif text-lg text-foreground">{artwork.title}</h3>
+        <Link href={`/gallery/${artwork.id}`}>
+          <h3 className="font-serif text-lg text-foreground transition-colors hover:text-accent">
+            {artwork.title}
+          </h3>
+        </Link>
         <p className="text-sm text-muted line-clamp-2">{artwork.description}</p>
         <p className="text-sm text-muted">{artwork.category}</p>
 

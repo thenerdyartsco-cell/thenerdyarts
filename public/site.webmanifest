@@ -1,0 +1,12 @@
+{
+  "name": "The Nerdy Arts",
+  "short_name": "Nerdy Arts",
+  "description": "Handcrafted, one-of-a-kind art pieces. Buy original artworks or commission a custom piece.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f9f8f6",
+  "theme_color": "#b8860b",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

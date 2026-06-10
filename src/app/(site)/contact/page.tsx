@@ -7,6 +7,7 @@ import InstagramIcon from "@/components/ui/InstagramIcon";
 export const metadata: Metadata = {
   title: "Contact Us",
   description: "Get in touch with The Nerdy Arts. We'd love to hear from you about art, commissions, or any questions.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {

@@ -9,6 +9,7 @@ export interface Artwork {
   featured: boolean;
   order: number;
   createdAt: string;
+  updatedAt?: string;
 }
 
 export interface PurchaseRequest {
