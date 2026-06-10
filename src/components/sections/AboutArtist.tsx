@@ -41,14 +41,27 @@ export default function AboutArtist() {
 
               <div className="space-y-4 text-muted leading-relaxed">
                 <p>
-                  The Nerdy Arts is born from a deep passion for creating art
-                  that resonates. Each piece is carefully handcrafted, blending
-                  traditional techniques with a unique creative vision.
+                  The Nerdy Arts is a small creative space built from a genuine
+                  love for art and storytelling.
                 </p>
                 <p>
-                  From concept to completion, every artwork is a journey of
-                  exploration and expression. We believe art should not just be
-                  seen, it should be felt.
+                  Founded by <b>Swechchha Vishwakarma</b>, an MBBS student at
+                  BRD Medical College, Gorakhpur, it reflects her journey of
+                  balancing science with creativity. Alongside her studies, she
+                  has continued to nurture her passion for art, earning
+                  recognition in several inter-college art competitions for her
+                  dedication and attention to detail.
+                </p>
+                <p>
+                  For Swechchha, every artwork begins with a simple idea,
+                  feeling, or moment of inspiration. Through careful
+                  craftsmanship and a personal artistic touch, she hopes to
+                  create pieces that feel meaningful, memorable, and connected
+                  to the people who experience them.
+                </p>
+                <p>
+                  Art, to her, is not just something to look at. It is something
+                  to connect with.
                 </p>
               </div>
 
