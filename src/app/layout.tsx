@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
+import NextTopLoader from "nextjs-toploader";
 import {
   SITE_URL,
   SITE_NAME,
@@ -116,6 +117,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body className="min-h-screen antialiased">
+        <NextTopLoader
+          color="#b8860b"
+          height={2}
+          showSpinner={false}
+          speed={400}
+          easing="ease"
+          shadow="0 0 8px rgba(184,134,11,0.5), 0 0 4px rgba(196,151,59,0.4)"
+          zIndex={9999}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

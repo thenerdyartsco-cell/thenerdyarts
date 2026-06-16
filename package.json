@@ -19,6 +19,7 @@
     "lucide-react": "^1.17.0",
     "motion": "^12.40.0",
     "next": "^15.5.19",
+    "nextjs-toploader": "^3.9.17",
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "resend": "^6.12.4",
