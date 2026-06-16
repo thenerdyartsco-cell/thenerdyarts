@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   description: "Read what our collectors and clients say about The Nerdy Arts and our handcrafted art pieces.",
 };
 
+// Approved reviews are stored in Firestore and change over time, so this page
+// must render per request (not be frozen as static HTML at build time).
+export const dynamic = "force-dynamic";
+
 export default async function ReviewsPage() {
   let reviews: Review[] = [];
 
